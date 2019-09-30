@@ -1,0 +1,28 @@
+{
+  "name": "dcli",
+  "version": "1.0.0",
+  "description": "Ejercicios DCLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anxoportela/DCLI.git"
+  },
+  "author": "Anxo Portela-Insua Blanco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anxoportela/DCLI/issues"
+  },
+  "homepage": "https://github.com/anxoportela/DCLI#readme",
+  "devDependencies": {
+    "eslint": "^6.0.1"
+  },
+  "dependencies": {
+    "csslint": "^1.0.5",
+    "eslint-plugin-html": "^6.0.0",
+    "htmlhint": "^0.11.0",
+    "jshint": "^2.10.2"
+  }
+}
