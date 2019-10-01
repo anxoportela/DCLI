@@ -5,7 +5,7 @@ if (isNaN(peso) || isNaN(estatura)) {
 	alert('Ha introducido valores incorrectos');
 } else {
 	estatura*=0.01;
-	let imc=peso/(estatura^2);
+	let imc=peso/(estatura**2);
 	if (imc<=15) {
 		alert('Delgadez muy severa')
 	} else if (imc>15 && imc<16) {

@@ -5,4 +5,4 @@ if (isNaN(base) || isNaN(altura)) {
     alert('Introduzca valores numéricos');
 } else {
     alert((base * altura) / 2);
-};
+}
