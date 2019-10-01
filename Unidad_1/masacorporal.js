@@ -21,6 +21,6 @@ if (isNaN(peso) || isNaN(estatura)) {
 	} else if (imc>=35 && imc<40) {
 		alert('Obesidad severa');
 	} else {
-	alert('Obesidad mórbida');
+		alert('Obesidad mórbida');
 	}
 }
