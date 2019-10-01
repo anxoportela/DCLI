@@ -4,7 +4,7 @@ var estatura = prompt('Introduzca su estatura en cm',0);
 if (isNaN(peso) || isNaN(estatura)) {
 	alert('Ha introducido valores incorrectos');
 } else {
-	estatura = estatura*0.01;
+	estatura*=0.01;
 	let imc=peso/(estatura^2);
 	if (imc<=15) {
 		alert('Delgadez muy severa')
