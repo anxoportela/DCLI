@@ -1,10 +1,11 @@
 var peso = prompt('Introduzca su peso en KG',0);
 var estatura = prompt('Introduzca su estatura en cm',0);
+estatura = estatura*0.01;
 
-var imc=peso/estatura^2;
+var imc=peso/(estatura^2);
 
-if (imc>0 && imc<=15) {
-	alert('Delgadez muy severa');
+if (imc<=15) {
+	alert('Delgadez muy severa')
 } else if (imc>15 && imc<16) {
 	alert('Delgadez severa');
 } else if (imc>=16 && imc<18.5) {
