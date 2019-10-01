@@ -1,4 +1,4 @@
-var peso = prompt('Introduzca su peso en KG',0);
+var peso = prompt('Introduzca su peso en kg',0);
 var estatura = prompt('Introduzca su estatura en cm',0);
 
 if (isNaN(peso) || isNaN(estatura)) {
