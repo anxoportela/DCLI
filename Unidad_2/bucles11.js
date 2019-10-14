@@ -1,6 +1,6 @@
-var dia=prompt("Introduza el día del mes");
-var mes=prompt("Introduza el mes");
-var ano=prompt("Introduza el año");
+var dia=prompt("Introduzca el día del mes");
+var mes=prompt("Introduzca el mes");
+var ano=prompt("Introduzca el año");
 var fecha=false;
 
 function esBisiesto(a) {
