@@ -1,7 +1,7 @@
 var tamano = parseInt(prompt('Introduzca el tamaño del triangulo'));
 var i = 1;
 var j = "*";
-var k = " ";
+var k = "$";
 
 if (tamano < 2) {
     do {
@@ -26,7 +26,7 @@ if (tamano < 2) {
     }
     console.log('');
     for (i=1; i<=tamano; i++) {
-        console.log(k.repeat((tamano-i)/2) + j.repeat(i));
+        console.log(k.repeat((tamano+i)/2) + j.repeat(i));
     }
 } else {
     for (i=1; i <= tamano; i++) {
@@ -46,6 +46,6 @@ if (tamano < 2) {
     }
     console.log('');
     for (i=1; i<=tamano; i++) {
-        console.log(k.repeat((tamano-i)/2) + j.repeat(i));
+        console.log(k.repeat((tamano+i)/2) + j.repeat(i));
     }
 }
