@@ -21,7 +21,7 @@ for (let i = duracion; i >= 1; i--) {
     tabla += '<td>' + intereses.toFixed(2) + '</td>';
     tabla += '<td>' + amortizado.toFixed(2) + '</td>';
     tabla += '<td>' + prestamo.toFixed(2) + '</td>';
-    tabla += '</<td>';
+    tabla += '</tr>';
 }
 
 tabla += '</table>';
