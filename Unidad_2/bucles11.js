@@ -31,7 +31,7 @@ if (esBisiesto(ano)==true){
     }
 }
 
-if (fecha==true){
+if (fecha){
     console.log("La Fecha introducida es correcta")
 } else {
     console.log("La fecha introducida es incorrecta")
