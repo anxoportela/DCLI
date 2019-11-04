@@ -1,5 +1,5 @@
 function cambioBase(a, b, c) {
-    if (a.Number.NaN) {
+    if (a.isNaN()) {
         return console.log("No es un número entero")
     } else {
         while (b >= 2 || b <= 36 || c >= 2 || c <= 36) {
