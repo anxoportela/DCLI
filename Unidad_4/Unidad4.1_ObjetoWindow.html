@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<div id="infoventana">
+	</div>
+	<div id="botones">
+		<button onclick="crearVentana()"> Crear Ventana</button>
+		<button onclick="cerrarVentana()"> Cerrar Ventana</button>
+		<button onclick="redimensionarVentana()"> Redimensionar ResizeBy</button>
+		<button onclick="redimensionarVentana2()"> Redimensionar resizeTo</button>
+		<button onclick="moverVentana()"> mover moveBy</button>
+		<button onclick="moverVentana2()"> mover moveTo</button>
+
+		<button onclick="scrollVentana()"> scrollBy</button>
+		<button onclick="scrollVentana2()"> scrollTo</button>
+		<button onclick="ponerFoco()"> poner foco en ventana</button>
+		<button onclick="imprimir()"> Imprimir</button>
+	</div>
+
+	<script>
+		var miVentana;
+
+		function crearVentana() {
+			miVentana = window.open("lorem.html", "", "height=200,width=500");
+			//escribeInfo();
+		}
+
+		function cerrarVentana() {
+			miVentana.close();
+		}
+
+		function redimensionarVentana() {
+			if (!miVentana.closed) {
+				miVentana.focus();
+				miVentana.resizeBy(10, 10);
+			}
+		}
+
+		function redimensionarVentana2() {
+			if (!miVentana.closed) {
+				miVentana.focus();
+				miVentana.resizeTo(50, 50);
+			}
+		}
+
+		function scrollVentana() {
+			if (!miVentana.closed) {
+				miVentana.focus();
+				miVentana.scrollBy(0, 20);
+			}
+		}
+
+		function scrollVentana2() {
+			if (!miVentana.closed) {
+				miVentana.focus();
+				miVentana.scrollTo(0, miVentana.innerHeight/2);
+			}
+		}
+
+		function moverVentana() {
+			if (!miVentana.closed) {
+				miVentana.focus();
+				miVentana.moveBy(10, 10);
+			}
+		}
+
+		function moverVentana2() {
+			if (!miVentana.closed) {
+				miVentana.focus();
+				miVentana.moveTo(100, 150);
+			}
+		}
+
+		function ponerFoco() {
+			if (!miVentana.closed) {
+				miVentana.focus();
+			}
+		}
+
+		function imprimir() {
+			if (!miVentana.closed) {
+				miVentana.focus();
+				miVentana.print();
+			}
+		}
+
+		//function escribeInfo(){
+		//	document.getElementById("infoventana").innerHTML = "<p>Nombre: " + miVentana.name + "<br>Ancho externo: " +miVentana.</p>";
+		//}
+	</script>
+</body>
+
+</html>
