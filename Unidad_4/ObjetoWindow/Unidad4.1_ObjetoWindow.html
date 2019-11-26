@@ -29,7 +29,7 @@
 
 		function crearVentana() {
 			miVentana = window.open("lorem.html", "", "height=200,width=500");
-			//escribeInfo();
+			escribeInfo();
 		}
 
 		function cerrarVentana() {
@@ -41,6 +41,7 @@
 				miVentana.focus();
 				miVentana.resizeBy(10, 10);
 			}
+			escribeInfo();
 		}
 
 		function redimensionarVentana2() {
@@ -48,6 +49,7 @@
 				miVentana.focus();
 				miVentana.resizeTo(50, 50);
 			}
+			escribeInfo();
 		}
 
 		function scrollVentana() {
@@ -55,6 +57,7 @@
 				miVentana.focus();
 				miVentana.scrollBy(0, 20);
 			}
+			escribeInfo();
 		}
 
 		function scrollVentana2() {
@@ -62,6 +65,7 @@
 				miVentana.focus();
 				miVentana.scrollTo(0, miVentana.innerHeight/2);
 			}
+			escribeInfo();
 		}
 
 		function moverVentana() {
@@ -69,6 +73,7 @@
 				miVentana.focus();
 				miVentana.moveBy(10, 10);
 			}
+			escribeInfo();
 		}
 
 		function moverVentana2() {
@@ -76,12 +81,14 @@
 				miVentana.focus();
 				miVentana.moveTo(100, 150);
 			}
+			escribeInfo();
 		}
 
 		function ponerFoco() {
 			if (!miVentana.closed) {
 				miVentana.focus();
 			}
+			escribeInfo();
 		}
 
 		function imprimir() {
@@ -91,9 +98,9 @@
 			}
 		}
 
-		//function escribeInfo(){
-		//	document.getElementById("infoventana").innerHTML = "<p>Nombre: " + miVentana.name + "<br>Ancho externo: " +miVentana.</p>";
-		//}
+		function escribeInfo(){
+			document.getElementById("infoventana").innerHTML = "<p>Nombre: " + miVentana.name + "<br>Ancho externo: " + miVentana.outerWidth + "<br>Alto externo: " + miVentana.outerHeight + "<br>Ancho interno: " + miVentana.innerWidth + "<br>Alto Interno: " + miVentana.innerHeight + "<br>Scroll Horizontal: " + miVentana.pageXOffset + "<br>Scroll Vertical: " + miVentana.pageYOffset + "<br>Distancia desde la Izq.: " + miVentana.screenX + "<br>Distancia desde Arriba: " + miVentana.screenY + "</p>";
+		}
 	</script>
 </body>
 
