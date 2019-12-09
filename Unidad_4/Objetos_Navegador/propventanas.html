@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        function verInformacion() {
+            //todas las propiedades se refieren a la ventana actual
+            document.write("¿Está la ventana cerrada? " + ventana.closed + "<br />");
+            document.write("El valor por defecto del texto de la barra de estado es = " + ventana.defaultStatus +
+                "<br />");
+            document.write("El objeto documento que contiene la página es = " + ventana.document + "<br />");
+            document.write("El conjunto de frames de la página es = " + frames + "<br />");
+            document.write("El objeto historial de la página es = " + ventana.history + "<br />");
+            document.write("El espacio útil vertical de la ventana es = " + ventana.innerHeight + "<br />");
+            document.write("El espacio útil horizontal de la ventana es = " + ventana.innerWidth + "<br />");
+            document.write("El número de frames de la ventana es = " + length + "<br />");
+            document.write("El URL es = " + ventana.location + "<br />");
+            if (ventana.locationbar) {
+                document.write("El objeto barra de direcciones del navegador es = " + ventana.locationbar + "<br />");
+                var objetoBarra = new Object;
+                objetoBarra = ventana.locationbar;
+                document.write("&nbsp;&nbsp;&nbsp;Elementos de la BARRA<br />");
+                for (propiedad in objetoBarra) {
+                    document.write("&nbsp;&nbsp;&nbsp;propiedad " + propiedad + " = ", objetoBarra[propiedad],
+                    "<br />");
+                }
+            }
+            document.write("El nombre de la ventana es " + ventana.name + "<br />");
+            document.write("El objeto navigator de la ventana es = " + ventana.navigator + "<br />");
+            document.write("El objeto window que abrió la ventana es = " + ventana.opener + "<br />");
+            document.write("El nombre del objeto window que abrió la ventana es = " + ventana.opener.name + "<br />");
+            document.write("La altura exterior de la ventana es = " + ventana.outerHeight + "<br />");
+            document.write("La anchura exterior de la ventana es = " + ventana.outerWidth + "<br />");
+            document.write("El objeto window que contiene los marcos es = " + ventana.parent + "<br />");
+            document.write("El nombre del objeto window que contiene los marcos es = " + ventana.parent.name +
+            "<br />");
+            if (ventana.personalbar) {
+                document.write("El objeto de la barra de herramientas personal del navegador es = " + ventana
+                    .personalbar + "<br />");
+            }
+            if (ventana.scrollbars) {
+                document.write("El objeto de las barras de desplazamiento del navegador es = " + ventana.scrollbars +
+                    "<br />");
+            }
+            if (ventana.toolbar) {
+                document.write("El objeto de la barras de herramientas del navegador es = " + ventana.toolbar +
+                    "<br />");
+            }
+            document.write("El objeto window de nivel superior es = " + ventana.top + "<br />");
+            document.write("El nombre del objeto window de nivel superior es = " + ventana.top.name + "<br />");
+
+        }
+        //aquí establecemos los valores de alguna de las propiedades de la ventana
+        var ventana = window.open("", "VentanaNueva", "height=100,width=800,left=100,top=100");
+        //ventana.name="VentanaCreada";
+
+        name = "VentanaCreadora";
+        ventana.defaultStatus = "Valor por defecto de la barra estado";
+        verInformacion(ventana);
+    </script>
+    <title>Propiedades de ventana</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objeto del navegador Location</title>
+    <script>
+    function nuevoDoc(){
+        nuevo = prompt("Introduzca la página web a abrir: ")
+        location.assign("http://" + nuevo);
+    }
+
+    function reload(){
+        location.reload();
+    }
+
+    function replace(){
+        nuevo = prompt("Introduzca la página web a reemplazar: ")
+        location.replace("http://" + reemplazo)
+    }
+    </script>
+</head>
+<body>
+    <button onclick="nuevoDoc()">Carga un nuevo Documento</button>
+    <button onclick="reload()">Recarga la página Web</button>
+    <button onclick="replace()">Sustituye la página</button>
+</body>
+</html>
