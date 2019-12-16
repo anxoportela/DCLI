@@ -1,0 +1,46 @@
+﻿<!DOCTYPE hml>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+    <title>Ejercicio3a</title>
+	
+	<style type="text/css">
+		div{				
+			text-align: center;	
+			font-size: 200%;
+			float: left;
+			margin: 20px;
+		}
+	</style>
+
+  </head>
+  
+  <body>
+	<div id="arbol"> 
+	</div>
+
+	<script type="text/javascript">
+	
+		var altura = parseInt(prompt("Introduzca la altura de la pirámide"));
+		var salida = "";
+		var asterisco = "*";
+
+		while (altura<8 || altura>15){
+			alert("Introduzca una altura válida");
+			altura = prompt("Introduzca la altura de la pirámide");
+		}
+
+		for (let i=1; i<=altura;i++){
+			salida += asterisco.repeat(i) + "<br>";
+		}
+
+		for (let i=0; i<4;i++){
+			salida += asterisco.repeat(2) + "<br>"
+		}
+
+		document.getElementById("arbol").innerHTML = salida;
+
+	
+ 	</script>
+  </body>
+  </html>
