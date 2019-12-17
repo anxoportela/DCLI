@@ -37,7 +37,7 @@ function sumarMeses(){
     let mesFinal;
 
     if ((mesInicio+parseInt(x))>11){
-        mesFinal = parseInt(x)-mesInicio+11;
+        mesFinal = parseInt(x)-mesInicio+10;
         anoFinal=anoInicio+1;
     } else {
         mesFinal = parseInt(x)+mesInicio;
@@ -47,12 +47,10 @@ function sumarMeses(){
 
     let fechaSumaMeses = new Date(anoFinal,mesFinal,diaMes);
     let dia = fechaSumaMeses.getDate();
-    let mes = fechaSumaMeses.getMonth();
+    let mes = fechaSumaMeses.getMonth()+1;
     let ano = fechaSumaMeses.getFullYear();
 
-    if(mes==0){
-        mes+=1;
-    }
+
 
     document.getElementById("fechaModificada").innerHTML = dia + "/" + mes + "/" + ano;
 
