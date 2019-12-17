@@ -46,8 +46,14 @@ function desencriptarTexto() {
         textoADesencriptarTotal += textoADesencriptarPares[i] + textoADesencriptarImPares[i];
     }
 
-    for (let i = 0; i < textoADesencriptarTotal.length; i += 2) {
-        num = parseInt(textoADesencriptarTotal.substring(i, i + 1));
+    // for (let i = 0; i < textoADesencriptarTotal.length; i += 2) {
+    //     num = parseInt(textoADesencriptarTotal.substring(i, i + 1));
+    //     textoFinal += letras[num - 10];
+    // }
+
+        for (let i = 0; i < textoADesencriptarTotal.length; i++) {
+        num = parseInt(textoADesencriptarTotal.charAt(i)+textoADesencriptarTotal.charAt(++i));
+        console.log(num);
         textoFinal += letras[num - 10];
     }
 
