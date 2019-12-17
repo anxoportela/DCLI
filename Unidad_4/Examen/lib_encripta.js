@@ -48,6 +48,7 @@ function desencriptarTexto() {
 
     // for (let i = 0; i < textoADesencriptarTotal.length; i += 2) {
     //     num = parseInt(textoADesencriptarTotal.substring(i, i + 1));
+    //     console.log(num);
     //     textoFinal += letras[num - 10];
     // }
 
