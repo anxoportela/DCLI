@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="">
+    <title>Ejercicio de Repaso</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Gestion de socios</h1>
+    <h2>Datos del Socio</h2>
+
+    Numero del socio: <input type="text" name="num" id="num" value="" disabled=""><br>
+    DNI: <input type="text" name="dni" id="dni" value=""><br>
+    Nombre: <input type="text" name="nom" id="nom" value=""><br>
+    Apellidos: <input type="text" name="ape" id="ape" value=""><br>
+    Edad: <input type="text" name="edad" id="edad" value="" size="4"><br>
+    Localidad: <input type="text" name="loc" id="loc" value=""><br>
+    Cuota: <input type="text" name="cuo" id="cuo" value="" disabled=""><br>
+
+
+    <input type="button" value="Añadir nuevo socio socio" id="" onclick="crearSocio()">
+    <input type="button" value="Listar socios" id="" onclick="listarSocios(0)">
+    <input type="button" value="Listar socios por localidad" id="" onclick="listarSocios(1)">
+    <input type="button" value="Listar por DNI" id="" onclick="listarPorDNI()">
+    <hr>
+    <p id="mensaje">Mensajes informativos</p>
+</body>
+
+</html>
