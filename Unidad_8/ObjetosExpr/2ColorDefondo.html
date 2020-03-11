@@ -1,0 +1,39 @@
+<html> 
+<head> 
+   	<title>Color de fondo</title> 
+<script>
+	var colores = document.getElementsByTagName("input");
+	function cambiaColor(){
+		for (let i=0; i<colores.length; i++){
+			if(colores[i].checked == true){
+				document.body.style.backgroundColor = colores[i].value;
+				break;
+			}
+		}
+	}
+</script> 
+</head>
+
+<body> 
+<form name="fcolores"> 
+<input name="colores" type="Radio" value="#ffffff" checked> Blanco 
+<br> 
+<input name="colores" type="Radio" value="#ff0000"> Rojo 
+<br> 
+<input name="colores" type="Radio" value="#00ff00"> Verde 
+<br> 
+<input name="colores" type="Radio" value="#0000ff"> Azul 
+<br> 
+<input name="colores" type="Radio" value="#ffff00"> Amarillo 
+<br> 
+<input name="colores" type="Radio" value="#00ff00"> Turquesa 
+<br> 
+<input name="colores" type="Radio" value="#ff00ff"> Morado 
+<br> 
+<input name="colores" type="Radio" value="#000000"> Negro 
+<br> 
+<br> 
+<input type="Button" name="" value="Cambia Color" onclick="cambiaColor()"> 
+</form> 
+</body> 
+</html>

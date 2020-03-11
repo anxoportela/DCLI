@@ -20,7 +20,7 @@ var fechaPrueba3 = "22-02-81";
 var fechaPrueba4 = "22/02/1981";
 var fechaPrueba5 = "22/2/81";
 var fechaPrueba6 = "22-2-81";
-var dni = /[0-9]{8}[A-Z]{1}$/g;
+var dni = /^[0-9]{8}[A-Z]{1}$/g;
 var dniPrueba1 = "47785452C"
 var dniPrueba2 = "4778552C"
 var dniPrueba3 = "4778R452C"
@@ -47,7 +47,7 @@ var email = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\]
 //alert(movilPrueba2.match(tlfmvl));
 //alert(movilPrueba3.match(tlfmvl));
 
-//alert(fechaPrueba1.match(fecha));
+alert(fechaPrueba1.match(fecha));
 //alert(fechaPrueba2.match(fecha));
 //alert(fechaPrueba3.match(fecha));
 //alert(fechaPrueba4.match(fecha));

@@ -1,0 +1,38 @@
+<html>
+
+<head>
+	<title>Ejemplo Checkbox</title>
+	<meta charset="UTF-8">
+	<script>
+		function alertaChecked() {
+			var entrada = document.getElementsByTagName("input");
+			var salida = "Mis hobbies son: ";
+			for (let i = 0; i < entrada.length; i++) {
+				if (entrada[i].checked) {
+					salida += entrada[i].value + " ";
+				}
+			}
+			document.getElementById("mensaje").innerHTML = salida;
+		}
+	</script>
+</head>
+
+<body>
+	<form name="miFormulario" action="mailto:promocion@guiarte.com" enctype="text/plain">
+		<input type="checkbox" value="Fotografía"> Fotografía </input><br>
+		<input type="checkbox" value="Yoga"> Yoga </input><br>
+		<input type="checkbox" value="Bailes de salón"> Bailes de salón </input><br>
+		<input type="checkbox" value="Parapente"> Parapente </input><br>
+		<input type="checkbox" value="Cine"> Cine </input><br>
+		<input type="checkbox" value="Música"> Música </input><br>
+		<br>
+		<br>
+		<input type="button" value="Cuales son tus hobbies? " onclick="alertaChecked()">
+
+		<br>
+		<br>
+	</form>
+	<p id="mensaje">Tus hobbies son Fotografía,Yoga y Cine</p>
+</body>
+
+</html>
